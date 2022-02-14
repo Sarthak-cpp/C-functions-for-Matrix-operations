@@ -1,0 +1,30 @@
+COP290 Project1, Sub Task 1:
+Author: Sarthak(2020CS10379)
+The tar file contains:
+-->README file
+-->2020CS10379.cpp (Source Code File)
+-->Makefile
+All the functions are present in 2020CS10379.cpp
+
+
+The functions defined are:
+fullyconnected: Takes in names of input,weight,bias and output matrices as input and prints the fullyconnected layer to outputname.txt
+relu: Takes in names of input and output matrices and prints the relu function of individual elements of input matrix on the output matrix
+tanh: Takes in names of input and output matrices and prints the tanh function of individual elements of input matrix on the output matrix
+maxpooling: Takes in names of input, stride length and output name and prints the max pooled matrix in column major form on outputname.txt
+averagepooling: Takes in names of input, stride length and output name and prints the max pooled matrix in column major form on outputname.txt
+softmax: Applies the softmax function on a given vector taken as input name and prints it to outputname.txt
+sigmoid: Applies the sigmoid function on a given vector taken as input name and prints it to outputname.txt
+
+
+Any error in commands on terminal will create an error.txt which contains the type of error occured.
+Any error in the txt files will create the txt file with outputname.txt but printing the eroor occured.
+
+
+To compile and run, type "make" in the terminal
+This will create a "yourcode.out" file which will be executed with the respective terminal command for the specific functions
+
+
+For example: Suppose we wish to run the relu function on inputmatrix.txt to create an outputmatrix.txt
+For this, we first type "make" in the terminal to create the "yourcode.out" file
+Now we need to type ./yourcode.out activation relu inputmatrix.txt outputmatrix.txt to create outputmatrix.txt after ensuring that we have an inputmatrix.txt
